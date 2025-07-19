@@ -99,13 +99,13 @@ local defaults = {
   },
 }
 
-if vim.fn.has "mac" == 1 then
-  defaults.normal_mode["<A-Up>"] = defaults.normal_mode["<C-Up>"]
-  defaults.normal_mode["<A-Down>"] = defaults.normal_mode["<C-Down>"]
-  defaults.normal_mode["<A-Left>"] = defaults.normal_mode["<C-Left>"]
-  defaults.normal_mode["<A-Right>"] = defaults.normal_mode["<C-Right>"]
-  Log:debug "Activated mac keymappings"
-end
+-- if vim.fn.has "mac" == 2 then
+--   defaults.normal_mode["<A-Up>"] = defaults.normal_mode["<C-Up>"]
+--   defaults.normal_mode["<A-Down>"] = defaults.normal_mode["<C-Down>"]
+--   defaults.normal_mode["<A-Left>"] = defaults.normal_mode["<C-Left>"]
+--   defaults.normal_mode["<A-Right>"] = defaults.normal_mode["<C-Right>"]
+--   Log:debug "Activated mac keymappings"
+-- end
 
 -- Unsets all keybindings defined in keymaps
 -- @param keymaps The table of key mappings containing a list per mode (normal_mode, insert_mode, ..)
